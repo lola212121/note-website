@@ -1,0 +1,98 @@
+.note-section{
+    height: 100vh;
+    width: 20%;
+    background-color: #141414;
+}
+.writing-section{
+    background-color: #262626;
+    height: 100vh;
+    width: 80%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-div{
+    display: flex;
+    overflow-x: none
+    ;
+}
+
+
+
+.writing-area-wrapper {
+ 
+  position: relative;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 70vh;
+  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99 , #006aff, #ff0095); 
+  animation: 3s spin  linear infinite;
+  padding: 3px;
+  box-sizing: border-box;
+  
+  
+
+  
+}
+
+#writing-area {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #141414;
+  border: none;
+  resize: none;
+  color: gray;
+  text-indent: 10px;
+  line-height: 25px;
+  font-size: 20px;
+  background-image: repeating-linear-gradient(
+      to bottom,
+      #141414,
+      #141414 23px,
+      #333 23px,
+      #333 24px
+  );
+  background-size: 100% 24px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+#writing-area:focus {
+  outline: none;        
+  box-shadow: none;     
+  border: none;       
+}
+
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
