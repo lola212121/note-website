@@ -34,15 +34,23 @@
   margin-left: 10%;
   margin-top: 10%;
   height: 70vh;
-  background-image: conic-gradient(from var(--angle), #ff4545, #00ff99 , #006aff, #ff0095); 
-  animation: 3s spin  linear infinite;
-  padding: 3px;
-  box-sizing: border-box;
-  
-  
-
-  
+  box-sizing: border-box; 
 }
+
+.writing-area-wrapper::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-image: conic-gradient(from var(--angle), #ff4545, #00ff99 , #006aff, #ff0095); 
+    animation: 3s spin  linear infinite;
+    transform: translate(-50%, -50%);
+    padding: 3px;    
+    filter: blur(1.5em);
+}
+
 
 #writing-area {
   position: relative;
