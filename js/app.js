@@ -63,6 +63,43 @@ saveBtn.addEventListener('click', () => {
 
 
 
+    // saving in localstorage
+    const note = textPart.value
+    localStorage.setItem("savednote", note)
+
+    // div were text show 
+    textHeadline.addEventListener('click', () => {
+        const openingNote = document.createElement("div")
+        openingNote.classList.add("opening-note")
+        body.appendChild(openingNote)
+
+    // ! this code is not working i coulnd make it to apear on div this is for headline on saved note
+        // const openingHeadline = document.createElement("p")
+        // openingHeadline.textContent = headline.value
+        // openingHeadline.classList.add("opening-headline")
+        // openingNote.appendChild(openingHeadline)
+
+
+        // this is text that is saved in local storage and used to display in div  
+        const openingText = document.createElement("div")
+        openingText.innerHTML = localStorage.getItem("savednote")
+        openingText.classList.add("opening-text")
+        openingNote.appendChild(openingText)
+
+
+
+        // this is button that close div
+        const openingBtn = document.createElement("button")
+        openingBtn.innerHTML = 'close'
+        openingBtn.classList.add("opening-close-btn")
+        openingNote.appendChild(openingBtn)
+
+        openingBtn.addEventListener("click" , () => {
+            openingNote.classList.add("hide")
+        })
+        
+
+    })
 
     // creating deleate button
     const delBtn = document.createElement('button')
@@ -147,7 +184,5 @@ clearAll.addEventListener("click", () => {
 
 
 })
-
-
 
 

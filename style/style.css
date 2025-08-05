@@ -164,6 +164,7 @@ h1{
     color: white;
     margin-left: 2%;
     font-size: 2vh;
+    cursor: pointer ;
 }
 
 
@@ -257,6 +258,50 @@ h1{
     top: 60%;
     left: 10%;
 }
+
+
+.opening-note{
+  width: 60%;
+  right: 10%;
+  margin-left: 10%;
+  margin-top: 10%;
+  height: 73vh;
+  position: absolute;
+  top: -5%;
+  border: gray 1px solid;
+  background-color: #141414;
+}
+
+.opening-text{
+    color: gray;
+    margin-top: 5%;
+    margin-left: 10%;
+    font-size: 20px;
+
+}
+
+/* ! this code was for headline on saved divs but it didnt work so i gave up */
+/* .opening-headline{
+    margin-top: 5%;
+    color: gray;
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+    border: gray 1px solid;
+    height: 4vh;
+} */
+
+.opening-close-btn{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 4vh;
+    width: 100px;
+    border-radius: 50px;
+    margin-left: 85%;
+    margin-top: 50%;
+}
+
 
 @property --angle{
     syntax: "<angle>";
