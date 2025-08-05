@@ -302,6 +302,15 @@ h1{
     margin-top: 50%;
 }
 
+::-webkit-scrollbar{
+    background-color: #262626;
+    border: gray 1px solid ;
+}
+
+::-webkit-scrollbar-track-piece{
+    b
+}
+
 
 @property --angle{
     syntax: "<angle>";
