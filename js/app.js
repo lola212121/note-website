@@ -3,7 +3,7 @@ const noteContainer = document.querySelector(".note-history");
 const textPart = document.getElementById("writing-area")
 const clearBtn = document.querySelector(".clear-btn") 
 const headline = document.querySelector(".notes-headline-writing-tag")
-
+const body = document.body
 
 
 
@@ -12,7 +12,26 @@ saveBtn.addEventListener('click', () => {
 
     // alert 
     if( !textPart.value || !headline.value){
-        alert('please fill both the headline and note before saving')
+        // creating alert div
+        const alertDiv = document.createElement('div')
+        alertDiv.classList.add("alert-div")
+        body.appendChild(alertDiv)
+
+
+        // alert text
+        const alertText= document.createElement("p")
+        alertText.classList.add("alert-text")
+        alertText.textContent = "please fill both the headline and note before saving"
+
+        alertDiv.appendChild(alertText)
+
+        // alert button for closing div
+
+
+
+
+
+
         return
     }
 
