@@ -5,6 +5,7 @@ const clearBtn = document.querySelector(".clear-btn")
 const headline = document.querySelector(".notes-headline-writing-tag")
 const body = document.body
 const clearAll = document.querySelector(".history-clear-btn")
+const iconBtn = document.querySelector(".log-in-button")
 
 
 
@@ -185,4 +186,44 @@ clearAll.addEventListener("click", () => {
 
 })
 
+
+// log in and sign in button hover 
+
+
+// container for btns
+const container = document.createElement("div")
+container.classList.add("")
+
+
+// log in button 
+const logIn = document.createElement("button")
+logIn.textContent = "log in"
+logIn.classList.add("login-btn")
+body.appendChild(logIn)
+
+
+const signIn = document.createElement("button")
+signIn.textContent = "sign in"
+signIn.classList.add("sign-btn")
+body.appendChild(signIn)
+
+
+logIn.style.display= "none"
+signIn.style.display = "none"
+
+
+iconBtn.addEventListener("mouseenter", () => {
+
+});
+
+
+// log in and sign in button to desapear 
+
+container.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+        signIn.classList.add("hide")   
+        logIn.classList.add("hide") 
+    }, 2000);
+   
+});
 
