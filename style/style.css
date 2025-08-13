@@ -329,14 +329,11 @@ h1{
 
 
 .login-btn{
-    position: absolute;
-    top: 8%;
     height: 4vh;
-    width: 5%;
+    width: 10%;
     border-radius: 20px;
     color: gray;
     background-color: #141414;
-    right: 14%;
     outline: none;        
     box-shadow: none;     
     border: none; 
@@ -344,17 +341,25 @@ h1{
 
 
 .sign-btn{
-    position: absolute;
-    top: 2%;
     height: 4vh;
-    width: 5%;
+    width: 10%;
     border-radius: 20px;
     color: gray;
     background-color: #141414;
-    right: 14%;
     outline: none;        
     box-shadow: none;     
     border: none; 
+}
+
+
+.icon-wraper-container{
+    width: 20%;
+    height: 30vh;
+    background-color: transparent;
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    display: flex;
 }
 
 @property --angle{
