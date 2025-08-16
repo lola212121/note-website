@@ -7,8 +7,8 @@ const body = document.body
 const clearAll = document.querySelector(".history-clear-btn")
 const iconBtn = document.querySelector(".log-in-button")
 const container = document.querySelector(".icon-wrapper-container");
-const logIn = container.querySelector(".login-btn");
-const signIn = container.querySelector(".sign-btn");
+const logIn = document.querySelector(".login-btn");
+const signIn = document.querySelector(".sign-btn");
 
 
 
@@ -188,19 +188,3 @@ clearAll.addEventListener("click", () => {
 
 
 })
-
-
-// log in and sign in button hover 
-
-container.addEventListener("mouseenter", () => {
-    logIn.classList.remove("hide");
-    signIn.classList.remove("hide");
-});
-
-container.addEventListener("mouseleave", () => {
-    setTimeout(() => {
-        logIn.classList.add("hide");
-        signIn.classList.add("hide");
-    }, 200);
-});
-
